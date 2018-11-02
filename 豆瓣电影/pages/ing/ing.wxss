@@ -1,0 +1,43 @@
+.mod-test{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-family: "黑体";
+}
+
+.left image{
+  width: 250rpx;
+  height: 300rpx;
+}
+
+.sv{
+  height:1100rpx;
+}
+
+.right{
+  margin-left: 10rpx;
+}
+
+.year{
+  color:rgb(134, 133, 134);
+}
+
+.row{
+  padding: 10rpx;
+}
+.points{  
+  color:rgb(252, 104, 18);
+}
+
+.page-loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+  font-size: 14px;
+}
+
+.img-loading{
+  width:40rpx;
+  height:40rpx;
+}

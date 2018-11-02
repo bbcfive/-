@@ -1,0 +1,24 @@
+/* pages/detail/detail.wxss */
+.top{
+  display: flex;
+  padding: 20rpx;
+  font-family: "黑体";
+}
+.img{
+  width: 300rpx;
+  height: 400rpx;
+}
+
+.right{
+  margin-left:20rpx;
+  padding-bottom: 20rpx; 
+}
+
+.down{
+  padding: 20rpx;
+}
+
+.content{
+  text-indent: 80rpx;
+  text-align: left;
+}

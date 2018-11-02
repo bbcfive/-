@@ -1,0 +1,20 @@
+<view class='top'>
+  <view class="left">
+      <image class="img" src='{{img}}'></image>
+  </view>
+  <view class="right">
+    <view class="topic" style='font-size:18px'>{{name}}
+    <text style='font-size:15px'>{{year}}</text></view>
+    <view class="points"><text style='font-size:15px'>评分</text> {{points}}</view>
+    <view style='font-size:15px'>导演 
+      <text wx:for="{{directors}}"> {{item.name}} </text>
+    </view>
+    <view style='font-size:15px'>主演
+      <text wx:for="{{casts}}"> {{item.name}}</text>
+    </view>
+  </view>
+</view>
+<view class='down'>
+    <view >剧情简介</view>
+    <view class="content"><p>{{summary}}</p></view>
+</view>

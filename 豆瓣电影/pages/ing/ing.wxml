@@ -1,0 +1,42 @@
+<block class="loading" wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <image class="img-loading" src="../../image/1.gif"/>
+    <text>正在加载..</text>
+  </view>
+</block>
+<block wx:else>
+<scroll-view class="sv" scroll-y="true" scroll-top="10 " bindscrolltolower="lower">
+<block wx:for="{{list}}">
+  <view  data-id="{{item.id}}" wx:key="" class="mod-test" bindtap='redirect'>
+	<view class="left">
+    <image src="{{item.images.large}}"></image>
+	</view>
+	<view class="right">
+    <view class="row" style='font-size:18px'>{{item.title}} 
+      <text class="year" style='font-size:15px'>{{item.year}}</text>
+    </view>
+    <view  class="row" style='font-size:15px' >评分 
+      <text class="points" style='font-size:15px'>{{item.rating.average}}</text>
+    </view>
+    <view class="row" style='font-size:15px'>导演 
+      <text wx:for="{{item.directors}}" wx:for-item="directors" wx:key="">{{directors.name}}</text>
+    </view>
+    <view class="row" style='font-size:15px'>主演 
+      <text wx:for="{{item.casts}}" wx:for-item="casts" wx:key=""> {{casts.name}}</text>
+    </view>
+  </view>
+</view>
+</block>
+<block wx:if="{{showMore}}">
+  <view class="page-loading">
+    <image class="img-loading" src="../../image/1.gif"/>
+    <text>正在加载..</text>
+  </view>
+</block>
+<block wx:else>
+    <view class="page-loading">
+    <text>没有更多内容了</text>
+  </view>
+</block>
+</scroll-view>
+</block>
